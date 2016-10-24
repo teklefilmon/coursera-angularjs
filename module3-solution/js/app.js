@@ -66,6 +66,10 @@
 
 	function FoundItemsDirectiveController() {
 		var menuList = this;
+
+		menuList.isFoundEmpty = function () {
+			return menuList.items.length === 0;
+		}
 	}
 
 })();
